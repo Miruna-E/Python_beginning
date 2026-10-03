@@ -83,7 +83,6 @@ def hangman_game(word_to_guess):
                 indexes = [i for i, val in enumerate(word_to_guess) if val == letter_guessed]
                 for i in indexes:
                     guess_so_far[i] = letter_guessed
-            print(word_to_guess)
             print(" ".join(guess_so_far)) # prints list like it would print a string (just spaces in between elements)
 
             if(guess_so_far == word_to_guess):
